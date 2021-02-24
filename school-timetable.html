@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School TimeTable</title>
+    <style>
+        table {
+            border-top: 6px solid gray;
+            border-left: 6px solid gray;
+            border-bottom: 6px solid black;
+            border-right: 6px solid black;
+        }
+        th, td {
+          border: 1px solid;
+        }
+        th, td {
+          padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Time Table</h1>
+        <table border="1" style="background-color: lightgrey;"><!-- Noncompliant -->
+            <caption></caption>
+            <tr>
+                <th>Days/Periods</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th></th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+            </tr>
+            <tr>
+                <td>Mon</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Hindi</td>
+                <td rowspan="6">
+                    <p>B</p>
+                    <p>R</p>
+                    <p>E</p>
+                    <p>A</p>
+                    <p>K</p>
+                </td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral Science</td>
+            </tr>
+            <tr>
+                <td>Tue</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Hindi</td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral Science</td>
+            </tr>
+            <tr>
+                <td>Wed</td>
+                <td>Science</td>
+                <td>English</td>
+                <td rowspan="3">Hindi</td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral Science</td>
+            </tr>
+            <tr>
+                <td>Thu</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral Science</td>
+            </tr>
+            <tr>
+                <td>Fri</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Maths</td>
+                <td>Games</td>
+                <td>Moral Science</td>
+            </tr>
+            <tr>
+                <td>Sat</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Hindi</td>
+                <td colspan="3">Maths</td>
+            </tr>
+            <tr>
+                <td id="b10" colspan="9" style="font-weight: bold; text-align: center;">This is Class VIII</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
