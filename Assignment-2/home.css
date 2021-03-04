@@ -1,30 +1,49 @@
 .container {
-    display: flexbox;
+  display: flex;
 }
+body {
+  background-color: black;
+  color: whitesmoke;
+  font-family: 'Amatic SC', cursive;
+}
+
+ nav {
+  background-color: black;
+}
+
+.navbar {
+  display: flex;
+  height: 40px;
+  text-align: center;
+  width: 100vw;
+}
+
 ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
 li {
-float: left;
+  float: left;
 }
 
 li a {
-display: block;
-color: whitesmoke;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
+  display: block;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 3vh;
 }
 
 li a:hover:not(.active) {
-background-color: black;
+  background-color: #111;
 }
-
-.active {
-background-color: white;
+.responsive {
+  width: 100px;
+  height: 100px;
 }
