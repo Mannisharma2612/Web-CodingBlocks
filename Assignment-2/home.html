@@ -4,26 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <ul class="navbar">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li style="margin-left: auto;">
-                    <a href="#">Sign Up</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="image">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKWnQFJxZiIUp3XCBpqTPfqzmHi96Qdwovdg&usqp=CAU" alt="Nature" class="responsive">
+    <div class="flex-container">
+        <ul class="navigation">
+            <li><a href="#">Gallery</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li style="margin-left: 750px;"><a href="#">Sign Up</a></li>
+        </ul>
+      </div>
+
+
+
+      <div class="bgContainer" id="bgContainer">
+      <img src="https://images.unsplash.com/photo-1614794447777-63bd5f669437?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Background Cover Image" class="bgImage">
+      </div>
+
+
+
+      <div class="flipCardContainer" id="flipCardContainer">
+      <div class="card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://images.unsplash.com/photo-1526898834822-52c0ce699e8b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8YWJzdHJhY3QlMjBhcnR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Avatar" id="avtarImg">
+          </div>
+          <div class="flip-card-back" id="fcb1">
+            <h1>Art Image 1</h1> 
+            <p>Abstract Art</p> 
+            <p>Steve Johnson</p>
+          </div>
         </div>
+      </div>
+
+      <div class="card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://images.unsplash.com/photo-1525434486320-567654c1f256?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8YWJzdHJhY3QlMjBhcnR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Avatar" id="avtarImg">
+          </div>
+          <div class="flip-card-back"  id="fcb2">
+            <h1>Art Image 2</h1> 
+            <p>Abstract Art</p> 
+            <p>Kai Dhams</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://images.unsplash.com/flagged/photo-1563882687514-3811f4fa08c9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGFic3RyYWN0JTIwYXJ0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Avatar" id="avtarImg">
+          </div>
+          <div class="flip-card-back"  id="fcb3">
+            <h1>Art Image 3</h1> 
+            <p>Abstract Art</p> 
+            <p>Paul Blenkohorn</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="https://images.unsplash.com/photo-1614812514264-13a68dcdcf32?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDV8fGFic3RyYWN0JTIwYXJ0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Avatar" id="avtarImg">
+          </div>
+          <div class="flip-card-back"  id="fcb4">
+            <h1>Art Image 4</h1> 
+            <p>Abstract Art</p> 
+            <p>FLY .D</p>
+          </div>
+        </div>
+      </div>
+
     </div>
+    <div class="footerContainer" id="footerContainer">
+        <footer>
+            <p>Author: Manni Sharma<br>
+                <span>&copy;No One &middot </span>
+            <a href="" style="text-decoration: underline; color: #000;">#</a></p>
+          </footer>
+
+    </div>
+    
 </body>
 </html>
