@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    color: whitesmoke;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+button {
+    color: whitesmoke;
+    transition: 0.25s;
+    background-color: black;
+    border: #ff951c 3px solid;
+}   
+button:hover, button:focus {
+    border-color: #3EFF15;
+    color: whitesmoke;
+    background-color: black;
+}
+.toggle:hover {
+    box-shadow: 0px 0px 1em -1px #3EFF15;
+    transform: translateY(-0.25em);
+}
+button {
+    height: 60px;
+    width: 100px;
+}
