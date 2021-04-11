@@ -25,7 +25,11 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
 app.use(methodoverride('_method'));
 
-app.get('/', async(req, res) => {
+app.get('/', (req, res) => {
+    res.render('landingPage');
+})
+
+app.get('/articles', async(req, res) => {
 
     const articles =  await Article.find().sort({ createdAt: 'desc' });  
 

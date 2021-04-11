@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <title>Blog App</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            font-weight: bold;
+        }
+        
+        body {
+            background-color: black;
+            min-height: 200vh;
+        }
+        header {
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            top: 0%;
+            left: 0%;
+            transition: 0.6s;
+            -webkit-transition: 0.6s;
+            -moz-transition: 0.6s;
+            -ms-transition: 0.6s;
+            -o-transition: 0.6s;
+            padding: 40px 100px;
+            z-index: 100000;
+        }
+        
+        header.sticky {
+            padding: 10px 100px;
+            background: white;
+        }
+        header .logo {
+            position: relative;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.6s;
+            -webkit-transition: 0.6s;
+            -moz-transition: 0.6s;
+            -ms-transition: 0.6s;
+            -o-transition: 0.6s;
+        }
+        
+        header ul {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        header ul li {
+            position: relative;
+            list-style: none;
+        }
+        
+        header ul li a {
+            position: relative;
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            letter-spacing: 2px;
+            font-weight: 500px;
+            transition: 0.6s;
+            -webkit-transition: 0.6s;
+            -moz-transition: 0.6s;
+            -ms-transition: 0.6s;
+            -o-transition: 0.6s;
+        }
+        
+        header ul li a:hover,
+        header.sticky ul li a:hover {
+            color: red;
+        }
+        header.sticky .logo,
+        header.sticky ul li a {
+            color: black;
+        }
+        
+        .banner {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            background: url(https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&w=1000&q=80);
+            background-size: cover;
+        }
+  
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <header>
+        <a href="#" class="logo">BLOG APP</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">SIGN UP</a></li>
+            <li><a href="/articles">ENTER THE APP</a></li>
+        </ul>
+        </header>
+    </div>
+
+    
+  
+    <script type="text/javascript">
+      window.addEventListener("scroll", function() {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      })
+    </script>
+  </body>
+</html>
