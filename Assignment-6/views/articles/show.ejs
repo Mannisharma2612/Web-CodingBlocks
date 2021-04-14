@@ -10,13 +10,17 @@
 <body>
     <div class="container">
         <h1 class="mb-4"><%= article.title %></h1>
-        <img src="<%= article.img %>" alt="#">
+        <!-- <img class="card-img-top" src="<%= article.image %>" alt="Article Image"> -->
         <div class="text-muted mb-2">
             <%= article.createdAt.toLocaleDateString() %>
         </div> 
         <div>
             <h4><%= article.author %></h4>
         </div>
+        <div>
+            <h4><%= article.comments %></h4>
+        </div>
+
         <a href="/articles" class="btn btn-secondary">All Articles</a>
         <a href="/articles/edit/<%= article.id %>" class="btn btn-info">Edit</a>
     </div>

@@ -5,9 +5,9 @@ const articleSchema = new mongoose.Schema({
         required: true,
         type: String
     },
-    imageUrl: {
-        type: String
-    },
+    // image: {
+    //     type: String
+    // },
     author: {
         required: true,
         type: String

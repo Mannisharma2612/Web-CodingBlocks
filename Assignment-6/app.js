@@ -4,7 +4,6 @@ const articleRouter = require('./routes/articles');
 const Article = require('./models/article');
 const methodoverride = require('method-override');
 const app = express();
-
 mongoose.connect('mongodb://localhost:27017/blog', 
     {
         useNewUrlParser: true,
@@ -21,9 +20,9 @@ mongoose.connect('mongodb://localhost:27017/blog',
     })
 
 app.set('view engine', 'ejs');
-
 app.use(express.urlencoded({ extended: false }));
 app.use(methodoverride('_method'));
+
 
 app.get('/', (req, res) => {
     res.render('landingPage');

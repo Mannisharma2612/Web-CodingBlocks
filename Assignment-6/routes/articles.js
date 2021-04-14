@@ -28,10 +28,13 @@ router.put('/:id', async(req,res,next) => {
     next();
 },saveArticleandRedirect('edit'));
 
+
 router.delete('/:id',async (req,res) => {
     await Article.findByIdAndDelete(req.params.id);
     res.redirect('/articles');
 });
+
+
 
 
 function saveArticleandRedirect(path) {
